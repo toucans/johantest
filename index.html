@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan Andersen – Work With Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;margin:0}
+
+:root{
+  --cream:#f5f0e8;
+  --orange:#e8622a;
+  --black:#111;
+  --text:#222;
+  --muted:#555;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  font-size:15px;
+  line-height:1.6;
+  background:var(--cream);
+  color:var(--text);
+}
+
+/* NAV */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+}
+
+.nav-logo{
+  font-weight:500;
+  font-size:18px;
+  letter-spacing:.04em;
+}
+
+.nav-cta{
+  font-size:13px;
+  color:var(--orange);
+  text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  padding:40px 20px 20px;
+}
+
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-style:italic;
+  font-size:clamp(22px,4vw,36px);
+  margin-bottom:28px;
+}
+
+.video-wrapper{
+  max-width:720px;
+  margin:0 auto 24px;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.video-wrapper iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+}
+
+.btn-primary{
+  display:inline-block;
+  background:var(--orange);
+  color:white;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.5px;
+  padding:12px 24px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+/* PROCESS */
+
+.process{
+  max-width:680px;
+  margin:0 auto;
+  padding:48px 40px;
+}
+
+.process h2{
+  font-family:"Playfair Display",serif;
+  font-style:italic;
+  font-size:clamp(20px,3vw,28px);
+  margin-bottom:28px;
+}
+
+.step{
+  display:flex;
+  gap:20px;
+  padding:20px 0;
+  border-top:1px solid #ddd;
+}
+
+.step:last-child{
+  border-bottom:1px solid #ddd;
+}
+
+.step-num{
+  font-size:12px;
+  font-weight:600;
+  color:var(--orange);
+  width:20px;
+}
+
+.step-title{
+  font-size:15px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  margin-bottom:6px;
+}
+
+.step-desc{
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* FOOTER */
+
+footer{
+  background:var(--black);
+  color:#666;
+  text-align:center;
+  padding:40px 20px;
+  font-size:12px;
+}
+
+@media(max-width:700px){
+  nav{padding:14px 20px}
+  .process{padding:32px 20px}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-logo">Johan Andersen</div>
+  <a href="#" class="nav-cta">SCHEDULE A CALL →</a>
+</nav>
+
+<section class="hero">
+  <h1>Here's how I might be able to help you:</h1>
+
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/AcwfxwPYbvE"
+    allowfullscreen></iframe>
+  </div>
+
+  <a href="#" class="btn-primary">→ SCHEDULE A CALL ←</a>
+</section>
+
+<section class="process">
+  <h2>The Process</h2>
+
+  <div class="step">
+    <div class="step-num">01</div>
+    <div>
+      <div class="step-title">Listening</div>
+      <div class="step-desc">
+      Immerse yourself in the sounds of the language before anything else.
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">02</div>
+    <div>
+      <div class="step-title">Reading</div>
+      <div class="step-desc">
+      Reading reinforces vocabulary and structure in context.
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">03</div>
+    <div>
+      <div class="step-title">Speaking</div>
+      <div class="step-desc">
+      Speaking becomes natural output once enough input is stored.
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© johan.yt. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
