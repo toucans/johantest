@@ -6,6 +6,10 @@
 <title>Johan Andersen – Work With Me</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly link widget end -->
 
 <style>
 
@@ -155,7 +159,7 @@ footer{
 
 <nav>
   <div class="nav-logo">Johan Andersen</div>
-  <a href="#" class="nav-cta">SCHEDULE A CALL →</a>
+  <a href="#" class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/johan_jp/chat?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">SCHEDULE A CALL →</a>
 </nav>
 
 <section class="hero">
@@ -166,8 +170,10 @@ footer{
     allowfullscreen></iframe>
   </div>
 
-  <a href="#" class="btn-primary">→ SCHEDULE A CALL ←</a>
+  <a href="" class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/johan_jp/chat?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">→ SCHEDULE A CALL ←</a>
+
 </section>
+
 
 <section class="process">
   <h2>The Process</h2>
