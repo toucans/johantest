@@ -23,7 +23,13 @@
   --muted:#555;
 }
 
+html, body {
+  height: 100%;
+}
+
 body{
+  display: flex;
+  flex-direction: column;
   font-family:Inter,sans-serif;
   font-size:15px;
   line-height:1.6;
@@ -55,6 +61,8 @@ nav{
 /* HERO */
 
 .hero{
+  flex: 1;
+  min-height: calc(100vh - 100px);
   text-align:center;
   padding:40px 20px 20px;
 }
@@ -68,7 +76,7 @@ nav{
 
 .video-wrapper{
   max-width:720px;
-  margin:0 auto 24px;
+  margin:0 auto 32px;
   border-radius:6px;
   overflow:hidden;
 }
@@ -170,45 +178,10 @@ footer{
     allowfullscreen></iframe>
   </div>
 
-  <a href="" class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/johan_jp/chat?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">→ SCHEDULE A CALL ←</a>
+  <a href="#" class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/johan_jp/chat?hide_event_type_details=1&hide_gdpr_banner=1'});return false;">→ SCHEDULE A CALL ←</a>
 
 </section>
 
-
-<section class="process">
-  <h2>The Process</h2>
-
-  <div class="step">
-    <div class="step-num">01</div>
-    <div>
-      <div class="step-title">Listening</div>
-      <div class="step-desc">
-      Immerse yourself in the sounds of the language before anything else.
-      </div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-num">02</div>
-    <div>
-      <div class="step-title">Reading</div>
-      <div class="step-desc">
-      Reading reinforces vocabulary and structure in context.
-      </div>
-    </div>
-  </div>
-
-  <div class="step">
-    <div class="step-num">03</div>
-    <div>
-      <div class="step-title">Speaking</div>
-      <div class="step-desc">
-      Speaking becomes natural output once enough input is stored.
-      </div>
-    </div>
-  </div>
-
-</section>
 
 <footer>
   <p>© johan.yt. All rights reserved.</p>
